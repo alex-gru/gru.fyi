@@ -28,8 +28,8 @@
   <link rel="shortcut icon" href="gru.ico?" type="image/x-icon"/>
   <script>
     $(document).ready(function () {
-      $(document).on('click', '.footer a', function () {
-        $("#impress_container").toggleClass("invisible");
+      $(document).on('click', '.footer #impress-link', function () {
+        $("#impress").toggleClass("invisible");
       });
     });
   </script>
@@ -102,11 +102,15 @@
     <div class="col-sm-2"></div>
   </div>
   <br>
-  <div class="row footer">
-    © 2017 <a href="#impress">Impress</a>
-  </div>
-  <div id="impress_container" class="row invisible">
-    <a name="impress">Alexander Gruschina, B.Eng. | Moosen 6 | 6345 Kössen | Austria | &#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+  <div class="footer navbar-fixed-bottom">
+    <div class="row">
+      © 2017 <span id="impress-link">Impress</span>
+    </div>
+    <br>
+    <div id="impress" class="row invisible">
+      Alexander Gruschina, B.Eng. | Moosen 6 | 6345 Kössen | Austria | &#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+    </div>
+    <br>
   </div>
 </div>
 

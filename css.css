@@ -29,6 +29,14 @@ a:active, a:hover {
   opacity: 0.3;
 }
 
+#impress-link {
+  cursor: pointer;
+}
+
+#impress-link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   #avatar {
     width: 50%;
