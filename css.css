@@ -67,4 +67,8 @@ a:active, a:hover {
   .icons {
     font-size: 0.8em;
   }
+
+  .footer {
+    position: relative;
+  }
 }
