@@ -1,0 +1,62 @@
+body {
+  background: black url("bg.jpg") center center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+a {
+  color: white;
+}
+
+a:active, a:hover {
+  color: grey;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.footer {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 768px) {
+  #avatar {
+    width: 50%;
+    left: 25%;
+    position: relative;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 510px) {
+  #avatar {
+    width: 20%;
+    left: 40%;
+    position: relative;
+  }
+
+  .container {
+    margin-top: 2%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .icons {
+    font-size: 0.8em;
+  }
+}
