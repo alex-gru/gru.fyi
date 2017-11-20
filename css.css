@@ -29,12 +29,12 @@ a:active, a:hover {
   opacity: 0.3;
 }
 
-#imprint-link {
+#imprint-link, #imprint {
   cursor: pointer;
 }
 
-#imprint-link:hover {
-  text-decoration: underline;
+#imprint {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {

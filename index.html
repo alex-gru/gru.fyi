@@ -27,11 +27,12 @@
   <link rel="icon" href="gru.ico?" type="image/x-icon"/>
   <link rel="shortcut icon" href="gru.ico?" type="image/x-icon"/>
   <script>
-    $(document).ready(function () {
-      $(document).on('click', '.footer #imprint-link', function () {
-        $("#imprint").toggleClass("invisible");
+      $(document).ready(function () {
+          $(document).on('click', '.footer #imprint-link, .footer #imprint', function () {
+              $("#imprint").toggle();
+              $("#imprint-link").toggle();
+          });
       });
-    });
   </script>
 </head>
 <body>
@@ -103,11 +104,11 @@
   </div>
   <br>
   <div class="footer navbar-fixed-bottom">
-    <div class="row">
-      © 2017 <span id="imprint-link">Imprint</span>
+    <div id="imprint-link" class="row">
+      © 2017 <span>Imprint</span>
     </div>
-    <div id="imprint" class="row invisible">
-      Alexander Gruschina, B.Eng. | Moosen 6 | 6345 Kössen | Austria | &#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+    <div id="imprint" class="row">
+      © 2017 | Alexander Gruschina, B.Eng. | Moosen 6 | 6345 Kössen | Austria | &#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
     </div>
     <br>
   </div>
