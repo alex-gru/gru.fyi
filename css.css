@@ -29,11 +29,11 @@ a:active, a:hover {
   opacity: 0.3;
 }
 
-#impress-link {
+#imprint-link {
   cursor: pointer;
 }
 
-#impress-link:hover {
+#imprint-link:hover {
   text-decoration: underline;
 }
 
