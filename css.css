@@ -37,6 +37,15 @@ a:active, a:hover {
   display: none;
 }
 
+#gradeclimb {
+  width: 1.7em;
+  transition: all .1s ease-in-out;
+}
+
+#gradeclimb:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 768px) {
   #avatar {
     width: 50%;
