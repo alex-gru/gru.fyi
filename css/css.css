@@ -1,0 +1,118 @@
+body {
+    background: black url("../assets/bg.jpg") center center;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 1em;
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+a {
+    color: white;
+}
+
+#academics {
+    margin: 0;
+    opacity: 0.5;
+}
+
+a:active, a:hover {
+    color: grey;
+}
+
+.container {
+    margin-top: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    font-size: 11pt;
+    opacity: 0.3;
+    bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-width: 1px 0 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#imprint-link, #imprint {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#gradeclimb {
+    width: 1.7em;
+    transition: all .1s ease-in-out;
+    opacity: 0.5;
+}
+
+#gradeclimb:hover {
+    transform: scale(1.2);
+}
+
+#avatar {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #avatar {
+        width: 50%;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #avatar {
+        width: 10%;
+        left: 25%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 760px) {
+    .footer {
+        position: relative;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 510px) {
+    #avatar {
+        width: 20%;
+        left: 40%;
+    }
+
+    .container {
+        margin-top: 2%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .icons {
+        font-size: 0.8em;
+    }
+}

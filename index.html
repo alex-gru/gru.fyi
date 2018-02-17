@@ -7,55 +7,43 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="theme-color" content="#000000"/>
-  <meta name="description" content="Ing. Alexander Gruschina, B.Eng. is a software engineer, mainly focused on full stack web design and mobile devices. After attending a technical school on Electrical Engineering/IT (HTL) in Saalfelden, he has studied Computer Sciences (Informatik) at the University of Salzburg. He works as a web developer at Symptoma, a medical company in Salzburg. Besides development, his main interests include climbing, cross-country skiing and reading. Currently he lives in Kössen, Tyrol (Tirol), in the district of his hometown Kirchdorf. Computer Science, Web Design, Climbing. Get in touch.">
+  <meta name="description"
+        content="Ing. Alexander Gruschina, B.Eng. is a software engineer, mainly focused on full stack web design and mobile devices. He has studied Computer Science (Informatik) at the University of Salzburg, after attending a technical school on Electrical Engineering/IT (HTL) in Saalfelden. He works as a web developer at Symptoma, a medical company in Salzburg. Besides development, his main interests include climbing, cross-country skiing and reading. Currently he lives in Kössen, Tyrol (Tirol), in the district of his hometown Kirchdorf. Computer Science, Web Design, Climbing. Get in touch.">
   <meta name="keywords" content="Gruschina,Gru,Computer,Science,Informatik,Software,Engineering,Web,Design,Development,
   Salzburg,Universität,University,Itzling,HTL,HTBL,Saalfelden,Tirol,Climbing,Klettern,GradeClimb,Android,Electrical,
   Elektrotechnik,Kirchdorf,St.Johann">
   <title>Alexander Gruschina</title>
-  <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/grid12.css"/>
   <script src="https://use.fontawesome.com/12fb7f118b.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css.css"/>
+  <link rel="stylesheet" href="css/css.css"/>
   <link rel="icon" href="assets/gru.ico?" type="image/x-icon"/>
   <link rel="shortcut icon" href="assets/gru.ico?" type="image/x-icon"/>
   <script>
-      $(document).ready(function () {
-          $(document).on('click', '.footer #imprint-link, .footer #imprint', function () {
-              $("#imprint").toggle();
-              $("#imprint-link").toggle();
-          });
-      });
+      function toggleImprint() {
+          const hidden = document.getElementById("imprint").style.display === "none";
+          document.getElementById("imprint").style.display = hidden ? "block" : "none";
+          document.getElementById("imprint-link").style.display = hidden ? "none" : "block";
+      }
   </script>
 </head>
 <body>
 <div class="container">
   <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-      <img id="avatar" src="assets/gru.jpg" class="img-responsive img-circle" alt="gru">
+    <div class="col-sm-4 col-sm-offset-4">
+      <img id="avatar" src="assets/gru.jpg" alt="Alexander Gruschina" title="Alexander Gruschina">
     </div>
   </div>
   <br>
   <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6 name">
-      <h4>Computer Science, Web Design, Climbing.</h4>
+    <div class="col-sm-6 name col-sm-offset-3">
+      <h2>Computer Science, Web Design, Climbing.</h2>
       <h1>Alexander Gruschina</h1>
+      <p id="academics">Ing. B.Eng.</p>
     </div>
-    <div class="col-sm-3"></div>
   </div>
   <br>
   <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 icons">
+    <div class="col-sm-8 icons col-sm-offset-2">
       <!--xing-->
       <span class="fa-stack fa-2x">
         <a target="_blank" rel="noopener" href="https://www.xing.com/profile/Alexander_Gruschina" title="Xing">
@@ -72,21 +60,24 @@
       </span>
       <!--linkedin-->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/alexander-gruschina-a06ba2141/" title="LinkedIn">
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/alexander-gruschina-a06ba2141/"
+           title="LinkedIn">
         <i class="fa fa-square-o fa-stack-2x"></i>
         <i class="fa fa-linkedin fa-stack-1x"></i>
         </a>
       </span>
       <!--facebook-->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="https://www.facebook.com/grugrugrugrugrugrugrugrugrugrugrugru" title="Facebook">
+        <a target="_blank" rel="noopener" href="https://www.facebook.com/grugrugrugrugrugrugrugrugrugrugrugru"
+           title="Facebook">
         <i class="fa fa-square-o fa-stack-2x"></i>
         <i class="fa fa-facebook fa-stack-1x"></i>
         </a>
       </span>
       <!--mail-->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="mailto:&#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+        <a target="_blank" rel="noopener"
+           href="mailto:&#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
            title="Mail">
         <i class="fa fa-square-o fa-stack-2x"></i>
         <i class="fa fa-envelope fa-stack-1x"></i>
@@ -94,45 +85,40 @@
       </span>
       <!--whatsapp-->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="tel:+&#052;&#051;&#054;&#055;&#054;&#054;&#056;&#055;&#048;&#055;&#049;&#052;" title="WhatsApp">
+        <a target="_blank" rel="noopener"
+           href="tel:+&#052;&#051;&#054;&#055;&#054;&#054;&#056;&#055;&#048;&#055;&#049;&#052;" title="WhatsApp">
         <i class="fa fa-square-o fa-stack-2x"></i>
         <i class="fa fa-whatsapp fa-stack-1x"></i>
         </a>
       </span>
       <!--reading list on goodreads-->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="https://www.goodreads.com/review/list/75937544-alexander-gruschina?utf8=%E2%9C%93&shelf=read&sort=rating&per_page=infinite"
+        <a target="_blank" rel="noopener"
+           href="https://www.goodreads.com/review/list/75937544-alexander-gruschina?utf8=%E2%9C%93&shelf=read&sort=rating&per_page=infinite"
            title="Reading list">
         <i class="fa fa-square-o fa-stack-2x"></i>
         <i class="fa fa-book fa-stack-1x"></i>
         </a>
       </span>
     </div>
-    <div class="col-sm-2"></div>
   </div>
-  <br>
+  <br/>
   <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">SHOWCASE</div>
-    <div class="col-sm-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 icons">
+    <div class="col-sm-8 icons col-sm-offset-2">
       <!-- gradeclimb -->
       <span class="fa-stack fa-2x">
-        <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.gradeclimb.free" title="GradeClimb Climbing App">
+        <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.gradeclimb.free"
+           title="GradeClimb Climbing App">
         <i class="fa"><img id="gradeclimb" src="assets/gradeclimb.png"/></i>
         </a>
       </span>
     </div>
-    <div class="col-sm-2"></div>
   </div>
   <div class="footer navbar-fixed-bottom">
-    <div id="imprint-link" class="row">
+    <div id="imprint-link" class="row" onclick="toggleImprint()">
       © 2018 <span>Imprint</span>
     </div>
-    <div id="imprint" class="row">
+    <div id="imprint" class="row" style="display: none" onclick="toggleImprint()">
       © 2018 | Ing. Alexander Gruschina, B.Eng. | Moosen 6 | 6345 Kössen | Austria | &#103;&#114;&#117;&#115;&#099;&#104;&#046;&#097;&#108;&#101;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
     </div>
     <br>
