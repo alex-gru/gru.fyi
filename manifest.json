@@ -1,0 +1,13 @@
+{
+  "short_name": "gru.fyi",
+  "name": "Alexander Gruschina",
+  "display": "browser",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "assets/gru.jpg",
+      "type": "image/jpg",
+      "sizes": "510x510"
+    }
+  ]
+}

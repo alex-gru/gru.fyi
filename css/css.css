@@ -1,5 +1,5 @@
 body {
-    background: black url("../assets/bg.jpg") center center;
+    background: black url("../assets/bg.jpg") no-repeat center center;
     color: white;
     font-family: 'Helvetica', sans-serif;
     text-align: center;
