@@ -57,13 +57,13 @@ a:active, a:hover {
     user-select: none;
 }
 
-#gradeclimb {
+.project-icon  {
     width: 1.7em;
     transition: all .1s ease-in-out;
     opacity: 0.5;
 }
 
-#gradeclimb:hover {
+.project-icon:hover {
     transform: scale(1.2);
 }
 
