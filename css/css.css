@@ -79,13 +79,6 @@ a:active, a:hover {
     }
 }
 
-@media screen and (min-width: 2000px) {
-    #avatar {
-        width: 10%;
-        left: 25%;
-    }
-}
-
 @media screen and (orientation: landscape) and (max-height: 760px) {
     .footer {
         position: relative;
